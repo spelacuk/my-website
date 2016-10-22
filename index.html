@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">portfolio</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+        </h2>
+        <h3>krneki</h3>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
+<p><button type="button" class="btn btn-primary">Default</button>
+Things that will help me build websites:</p>
+
+<div class="row">
+  <div class="col-md-3">
+    <h2>HTML</h2>
+    <p>Used for content and structure of web pages.</p>
+  </div>
+  <div class="col-md-3">
+    <h2>CSS</h2>
+    <p>Defines the design of website elements.</p>
+  </div>
+  <div class="col-md-3">
+    <h2>JavaScript</h2>
+    <p>Can add cool effects to otherwise boring pages.</p>
+  </div>
+
+ <div class="col-md-3">
+    <h2>JavaScript</h2>
+    <p>Can add cool effects to otherwise boring pages.</p>
+  </div>
+
+  </div>  
